@@ -20,8 +20,11 @@ class BagMain {
             value.enhance();
         }
         if (double_enhance_handbags){
-            for (Bag bag : bags) {
-                bag.enhance();
+            for (Bag value : bags) {
+                if (value instanceof HandBag) {
+                    value.enhance();
+                }
+
             }
         }
     }
